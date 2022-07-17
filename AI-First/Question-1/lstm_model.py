@@ -1,14 +1,16 @@
+"""
+    LSTM(Long Short Term Memory Networks 长短期记忆网络) 模型定义
+
+"""
+
 import torch
 import torch.nn as nn
-import numpy as np
-import matplotlib.pyplot as plt
 
 
-class LSTM(nn.Module):
+class lstmNet(nn.Module):
     """
 
-    说明：
-
+        说明:
 
     """
     def __init__(self, input_size = 1, hidden_layer_size = 200, output_size = 1):
@@ -44,5 +46,9 @@ class LSTM(nn.Module):
 
 if __name__ == '__main__':
 
-    lstm = LSTM()
+    print("LSTM Net struct:")
+
+    lstm = lstmNet()
     print(lstm)
+
+    print("")
